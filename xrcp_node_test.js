@@ -1,4 +1,5 @@
 const net = require('net');
+const PORT = process.env.PORT || 3000;
 
 const players = net.createServer((socket) => {
   console.log(`Client connected: ${socket.remoteAddress}:${socket.remotePort}`);
@@ -14,7 +15,7 @@ const players = net.createServer((socket) => {
   });
 });
 
-players.listen(3000, () => {
+players.listen(PORT, () => {
   console.log('TCP server listening on port 3000');
 });
 
