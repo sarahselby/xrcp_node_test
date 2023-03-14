@@ -2,7 +2,7 @@ const net = require('net');
 const PORT = process.env.PORT || 3000;
 
 const players = net.createServer((socket) => {
-  console.log(`Client connected: ${socket.remoteAddress}:${socket.remotePort}`);
+  console.log('Client connected: ${socket.remoteAddress}:${socket.remotePort}');
 
   socket.on('data', (data) => {
  console.log(`Received message from client: ${data}`);
