@@ -4,6 +4,6 @@
   }
   
   "scripts": {
-    "start": "node your-script.js"
+    "start": "node xrcp_node_test.js"
 }
 }
