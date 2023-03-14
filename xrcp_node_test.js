@@ -16,7 +16,7 @@ const players = net.createServer((socket) => {
 });
 
 players.listen(PORT, () => {
-  console.log(`server started on port ${PORT}`);
+  console.log('server started on port ${PORT}');
   console.log('TCP server listening on port 3000');
 });
 
